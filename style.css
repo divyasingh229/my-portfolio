@@ -1,1 +1,307 @@
+* {
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff4ec;
+    color: #333;
+    transition: .3s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    background: #6d3b5f;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 17px;
+    border-radius: 20px;
+}
+
+.links a:hover {
+    background: #9b5c4d;
+}
+
+#menuButton,
+#themeButton {
+    background: none;
+    border: 0;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#menuButton {
+    display: none;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+.home {
+    min-height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.homeText {
+    max-width: 560px;
+}
+
+.smallText {
+    color: #9b5c4d;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #6d3b5f;
+    margin: 15px 0;
+}
+
+h2 {
+    color: #6d3b5f;
+    font-size: 32px;
+}
+
+h3 {
+    color: #6d3b5f;
+}
+
+.homeText > p:not(.smallText) {
+    line-height: 1.7;
+}
+
+.profile {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #6d3b5f;
+}
+
+.button,
+.send {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 12px 5px 0 0;
+    border: 0;
+    border-radius: 8px;
+    background: #9b5c4d;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+.send:hover {
+    background: #6d3b5f;
+}
+
+.about {
+    display: flex;
+    gap: 25px;
+}
+
+.card,
+.skill {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 5px 18px #00000012;
+}
+
+.card {
+    flex: 1;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.skill {
+    text-align: center;
+    border-top: 4px solid #9b5c4d;
+}
+
+.skill span {
+    font-size: 30px;
+}
+
+.skill p {
+    color: #777;
+}
+
+#contact {
+    text-align: center;
+}
+
+form {
+    max-width: 700px;
+    margin: 30px auto 0;
+    padding: 35px;
+    background: white;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+    color: #6d3b5f;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    font: inherit;
+}
+
+textarea {
+    height: 130px;
+    resize: none;
+}
+
+.send {
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#formMessage {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #6d3b5f;
+    color: white;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: .8s;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dark {
+    background: #211c20;
+    color: #eee;
+}
+
+.dark .card,
+.dark .skill,
+.dark form {
+    background: #332c31;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark label {
+    color: #e7b8d4;
+}
+
+@media (max-width: 850px) {
+    .home {
+        gap: 35px;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    #menuButton {
+        display: block;
+    }
+
+    .links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .profile {
+        width: 170px;
+        height: 170px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    form {
+        padding: 25px;
+    }
+}
