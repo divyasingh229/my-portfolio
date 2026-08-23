@@ -1,1 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divya Singh N| Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+  <nav>
+    <a href="#home" class="logo">Divya.</a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="menu" onclick="toggleMenu()">☰</button>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <span class="label">WELCOME TO MY PORTFOLIO</span>
+
+    <h1>Hi, I'm <span>Divya Singh N</span></h1>
+
+    <h2>CSE Student | Web Developer</h2>
+
+    <p>
+      Aspiring software engineer and Computer Science student
+      passionate about web development, programming and learning
+      new technologies.
+    </p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </div>
+
+  <img src="profile.jpeg" alt="Divya Singh" class="profile">
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <span class="label">A LITTLE ABOUT ME</span>
+  <h2 class="section-title">About Me</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Who I Am</h3>
+      <p>
+        Third Year B.E Computer Science student at PES Institute
+        of Technology and Management with hands-on experience
+        in web development.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>My Goal</h3>
+      <p>
+        Aspiring software engineer interested in building useful,
+        responsive and user-friendly digital solutions.
+      </p>
+    </div>
+ <div class="card">
+      <h3>Interests</h3>
+      <p>
+        Web Development,Programming and Commnication.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+  <span class="label">WHAT I'M BUILDING WITH</span>
+  <h2 class="section-title">My Skills</h2>
+
+  <div class="skill-grid">
+    <div class="skill">🌐<b>HTML</b><small>Web Structure</small></div>
+    <div class="skill">🎨<b>CSS</b><small>Web Styling</small></div>
+    <div class="skill">💻<b>C</b><small>Programming</small></div>
+    <div class="skill">🗄️<b>SQL</b><small>Database</small></div>
+     <div class="skill">📒<b>DSA</b><small>Programming</small></div>
+    
+    <div class="skill">🔗<b>Git/GitHub</b><small>Version Control</small></div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <span class="label">MY WORK</span>
+  <h2 class="section-title">My Projects</h2>
+  <p class="section-subtitle">Projects I have worked on</p>
+
+  <div class="project-grid">
+
+    <!-- FEATURED PROJECT -->
+    <article class="project featured">
+      <span class="tag">⭐ CURRENTLY BUILDING</span>
+
+      <div class="project-icon">💻</div>
+
+      <h3>Portfolio Website</h3>
+
+      <p>
+        A modern responsive personal portfolio website created
+        during my internship to showcase my profile, skills,
+        education, projects and contact details with Codomax Digital Solutions.
+      </p>
+
+      <div class="tech">HTML | CSS | JavaScript</div>
+
+      <div class="project-buttons">
+        <a href="https://github.com/divyasingh229/my-portfolio"
+           target="_blank" class="btn primary">
+          GitHub
+        </a>
+
+        <a href="https://divyasingh229.github.io/my-portfolio/"
+           target="_blank" class="btn">
+          Live Demo
+        </a>
+      </div>
+    </article>
+
+
+    <!-- PROJECT 2 -->
+    <article class="project">
+      <div class="project-icon">🚆</div>
+
+      <h3>Railway Reservation System</h3>
+
+      <p>
+        A database-based railway reservation project for managing
+        passengers, trains, bookings and cancellations.
+      </p>
+
+      <div class="tech">C | HTML | CSS | SQL</div>
+
+      <div class="project-buttons">
+        <a href="https://github.com/divyasingh229"
+           target="_blank" class="btn primary">
+          GitHub
+        </a>
+      </div>
+    </article>
+
+
+    <!-- PROJECT 3 -->
+    <article class="project">
+      <div class="project-icon">🌦️</div>
+
+      <h3>Weather & Productivity</h3>
+
+      <p>
+        A web project exploring the relationship between weather
+        conditions and productivity using data visualization.
+      </p>
+
+      <div class="tech">C | HTML | CSS | JavaScript</div>
+
+      <div class="project-buttons">
+        <a href="https://github.com/divyasingh229"
+           target="_blank" class="btn primary">
+          GitHub
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- EDUCATION -->
+<section id="education">
+  <span class="label">MY ACADEMIC JOURNEY</span>
+  <h2 class="section-title">Education</h2>
+
+  <div class="education-card">
+    <div class="education-icon">🎓</div>
+    <div class="education-content">
+      <h3>Bachelor of Engineering — Computer Science</h3>
+      <p>PES Institute of Technology and Management</p>
+      <span>Third Year • Computer Science & Engineering</span>
+    </div>
+  </div>
+  <div class="education-card">
+    <div class="education-icon">🏫</div>
+    <div class="education-content">
+      <h3>Pre - University Education</h3>
+     
+      <span>Completed higher secondary education before pursuing engineering</span>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section class="resume">
+  <h2>Want to know more about me?</h2>
+
+  <p>View or download my resume.</p>
+
+  <a href="resume.pdf" download class="btn primary">
+    📄 Download Resume
+  </a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <span class="label">LET'S CONNECT</span>
+
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-layout">
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form">
+
+      <h3>Send Me a Message</h3>
+
+      <form id="contactForm">
+
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        >
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        >
+
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          placeholder="Enter subject"
+          required
+        >
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Write your message..."
+          required
+        ></textarea>
+
+        <button type="submit" class="btn primary">
+          Send Message
+        </button>
+
+      </form>
+    </div>
+    <!-- SOCIAL CONTACT -->
+    <div class="contact-info">
+
+      <h3>Let's Connect</h3>
+
+      <p>
+        Interested in collaborating or discussing an opportunity?
+        Feel free to reach out.
+      </p>
+
+      <a href="mailto:divyasinghn430@gmail.com">
+        📧 divyasinghn430@gmail.com
+      </a>
+
+      <a
+        href="https://github.com/divyasingh229"
+        target="_blank">
+        💻 GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/divya-singh-n-77926332a"
+        target="_blank">
+        🔗 LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>
+    © <span id="year"></span> Divya Singh N. All rights reserved.
+  </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
